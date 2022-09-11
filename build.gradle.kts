@@ -9,7 +9,12 @@ buildscript {
         classpath(libs.gradle.kotlin)
         classpath(libs.gradle.serialization)
         classpath(libs.gradle.kotlinter)
+        classpath("com.android.tools.build:gradle:7.2.1")
     }
+}
+
+plugins {
+    `maven-publish`
 }
 
 allprojects {
